@@ -49,11 +49,20 @@ def find_best_study_time(availability: list[tuple[int, int]]) -> tuple[int, int,
    max_attendance = 0
 
 
+    """
+    for time in times (-1 so the program does not crash and returns an index of 13)
+        start = the first index item in the times list
+        end = the next item from start
+        sttendance = 0 at start
 
+        for first, second int in tuple of admissions list
+            if first is less than start from times and second is greater than end
+            append attendance
+    """
    for i in range(len(times) - 1):
 
         start = times[i]
-        end = times[i=1]
+        end = times[i + 1]
 
         attendance = 0
 
@@ -71,3 +80,15 @@ def find_best_study_time(availability: list[tuple[int, int]]) -> tuple[int, int,
 best_start, best_end, attendance = find_best_study_time(availability)
 print(f"Best study time: {best_start}-{best_end}")
 print(f"Expected attendance: {attendance} students")
+
+
+"""
+if not availability:
+    return (0, 0, 0)
+
+
+events = []
+
+
+
+"""
