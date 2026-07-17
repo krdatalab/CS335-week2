@@ -1,1 +1,46 @@
+"""
+Write answers to these questions in challenge1.md:
 
+What events happen at the start and end of each availability interval?
+- a meeting begins and a meeting ends
+
+What information must the program keep while it processes the events?
+-the time overlap
+-number of people
+-if an event is starting or ending
+-the time of each interval
+
+
+What should happen when an interval starts?
+-
+What should happen when an interval ends?
+What should happen when a start and an end occur at the same time?
+How will the program recognize the earliest interval with maximum attendance?
+
+"""
+
+# study_time.py
+
+availability = [
+    (9, 11),
+    (10, 12),
+    (8, 11),
+    (10, 13),
+    (7, 11),
+    (11, 14),
+    (9, 15)
+]
+
+
+def find_best_study_time(availability: list[tuple[int, int]]) -> tuple[int, int, int]:
+    """
+    Return (start_time, end_time, attendance) for the earliest interval
+    with the greatest number of available students.
+    """
+    # YOUR CODE HERE
+    pass  # Erase this line when you add your own code
+
+
+best_start, best_end, attendance = find_best_study_time(availability)
+print(f"Best study time: {best_start}-{best_end}")
+print(f"Expected attendance: {attendance} students")
