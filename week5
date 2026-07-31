@@ -1,6 +1,6 @@
 """
 
-Pseudocode- Binary tree operation
+Plan- Binary tree operation
 
 Create an empty tree.
 Set root to None because no nodes exist.
@@ -21,7 +21,24 @@ A pointer from existing node is updated so the new node becomes part of the tree
 
 """
 
+class Tree:
+  def _init_(self)
+    self.root_pointer = None
+
+
 class Node:
   def _init_(self, value):
     self.value = value
-    self.
+    self.left = None
+    self.right = None
+
+
+What I learnt:
+- with Dr. Falor's help my vs setup is ready for the project. A new version of python was installed
+- I was able to look at the insert code in binarytree base. Towards the end there is a conditional statement 
+that prevents more nodes from added to their visualization
+- Brother Falow worked me to go over debugging- run, step over, step in, step out and stop.
+- I researched about binary tree in detail - on how to start, how to add nodes etc. 
+- I started writing the code and time was up before I could finish it.
+
+
