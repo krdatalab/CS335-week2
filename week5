@@ -1,1 +1,27 @@
+"""
 
+Pseudocode- Binary tree operation
+
+Create an empty tree.
+Set root to None because no nodes exist.
+Insert the first node.
+Add a value to the node.
+Make that node the root.
+
+The node has (structure):
+data/value
+left pointer
+right pointer
+
+connect the first node as the root
+to insert future, the algorithm begins with the root. 
+If a root exists then compare the new node value to the root.
+For a new node it's left and right pointers are None. 
+A pointer from existing node is updated so the new node becomes part of the tree. 
+
+"""
+
+class Node:
+  def _init_(self, value):
+    self.value = value
+    self.
